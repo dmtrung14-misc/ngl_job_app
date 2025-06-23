@@ -1,4 +1,4 @@
-<img src="assets/images/logo.png" alt="Logo"/>
+<img src="assets/images/banner.png" alt="Logo"/>
 
 # NGL Job Tracker
 
