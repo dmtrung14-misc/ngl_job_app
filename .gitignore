@@ -9,8 +9,6 @@
 .history
 .svn/
 migrate_working_dir/
-.env
-private/
 
 # IntelliJ related
 *.iml
@@ -43,3 +41,6 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Service account credentials
+assets/secrets.json
