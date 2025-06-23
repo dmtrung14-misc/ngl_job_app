@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Job Tracker Extension</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="popupContainer">
+    <header id="appHeader">
+      <img src="/icons/icon48.png" alt="App Logo" id="appLogo" />
+      <h2>NGL - Job Tracker</h2>
+    </header>
+
+    <div id="mainView">
+      <h3>Add Job Entry</h3>
+      <label>Company:
+        <input type="text" id="company" required>
+      </label>
+      <label>Link:
+        <input type="text" id="link" required>
+      </label>
+      <label>Job Type:
+        <select id="jobType">
+          <option value="newgrad">New Grad</option>
+          <option value="intern">Intern</option>
+        </select>
+      </label>
+      <input type="hidden" id="date">
+      <button id="addJobButton">Add Job</button>
+      <hr>
+      <button id="goReport">Report Employee</button>
+    </div>
+
+    <div id="reportView">
+      <h3>Report Recruiter/Referrer</h3>
+      <label>Company:
+        <input type="text" id="repCompany" required>
+      </label>
+      <label>Name:
+        <input type="text" id="repName" required>
+      </label>
+      <label>Contact (email or phone):
+        <input type="text" id="repContact" required>
+      </label>
+      <label>Type:
+        <select id="repType">
+          <option value="referrers">Referrer</option>
+          <option value="recruiters">Recruiter</option>
+        </select>
+      </label>
+      <button id="reportButton">Submit</button>
+      <button id="backBtn">Back</button>
+    </div>
+  </div>
+
+  <script src="popup.js" type="module"></script>
+  <script src="report.js" type="module"></script>
+</body>
+</html>
